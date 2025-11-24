@@ -229,7 +229,7 @@ header .logo-img {
 .home-bg {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('Images/home-img.jpg');
+  background-image: url('home-img.jpg');
   background-size: cover;
   background-position: center;
   filter: blur(1px) brightness(2);
@@ -2921,4 +2921,5 @@ px rgba(59, 130, 246, 0.3);
     width: 70px;
     height: 36px;
   }
+
 }
