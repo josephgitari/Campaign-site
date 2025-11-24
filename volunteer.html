@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!--Navbar-->
+<header>
+  <div class="container">
+    <div class="logo">
+      <img src="Images/logo.png" alt="K'abisai Logo" class="logo-img" />
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="donate.html">Donate</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="index.html#media">Media</a>
+      <a href="report.html">Report Issue</a>
+      <a href="admin.html">Dashboard</a>
+      <button class="login-btn"><a href="login.html">Login</a></button>
+    </nav>
+
+    <!-- Hamburger -->
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-header">
+      <button class="close-btn" onclick="closeMenu()" aria-label="Close menu">×</button>
+    </div>
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <a href="donate.html" onclick="closeMenu()">Donate</a>
+    <a href="volunteer.html" onclick="closeMenu()">Volunteer</a>
+    <a href="index.html#media" onclick="closeMenu()">Media</a>
+    <a href="report.html" onclick="closeMenu()">Report Issue</a>
+    <a href="admin.html" onclick="closeMenu()">Dashboard</a>
+    <a href="login.html" onclick="closeMenu()">Login</a>
+  </div>
+</header>
+
+<!--Section-->
+      <section id="volunteer" class="volunteer-section">
+    <div class="container">
+      <div class="volunteer-grid">
+
+        <!-- Left: Hero Content -->
+        <div class="volunteer-hero animate-fade">
+          <h2>Be the Change</h2>
+          <p>Join Team K’abisai 2027 as a volunteer and help shape the future of Kisumu County.</p>
+          <div class="impact-stats">
+            <div class="stat">
+              <span class="number" data-count="500">0</span>+
+              <span class="label">Volunteers</span>
+            </div>
+            <div class="stat">
+              <span class="number" data-count="40">0</span>
+              <span class="label">Wards</span>
+            </div>
+            <div class="stat">
+              <span class="number" data-count="2027">2027</span>
+              <span class="label">Our Mission</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form Card -->
+        <div class="volunteer-form-card animate-slide">
+          <div class="form-header">
+            <h3>Register Now</h3>
+            <p>Fill in your details to get started</p>
+          </div>
+
+          <form id="volunteerForm">
+            <div class="input-group">
+              <input type="text" name="name" placeholder="Full Name" required />
+            </div>
+
+            <div class="input-group">
+              <select name="role" required>
+                <option value="">Select Role</option>
+                <option>Polling Agent</option>
+                <option>Ward Leader</option>
+                <option>Subcounty Leader</option>
+                <option>Campaign Ambassador</option>
+                <option>Media Volunteer</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <select name="ward" required>
+                <option value="">Select Ward</option>
+                <option>Ward 1 – Muhuru</option>
+                <option>Ward 2 – Kolwa</option>
+                <option>Ward 3 – Nyando</option>
+                <option>Ward 4 – Kadibo</option>
+                <option>Ward 5 – Seme</option>
+                <option>Ward 6 – Nyakach</option>
+                <option>Ward 7 – Kisumu Central</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-primary">
+              Register as Volunteer
+            </button>
+          </form>
+
+          <div class="form-footer">
+            <p>Join over <strong>500+</strong> passionate volunteers today!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!---Footer Section-->
+<footer class="footer-section">
+  <div class="footer-bg"></div>
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand Column -->
+      <div class="footer-col brand-col animate-fade">
+        <div class="footer-logo">
+          <span class="logo-k">K</span>
+          <span class="logo-text">K’abisai</span>
+        </div>
+        <h3>Team K’abisai 2027</h3>
+        <p class="tagline">The People’s Senator</p>
+        <p class="mission">
+          Building a Nairobi where every voice is heard, every ward is empowered, and every citizen thrives.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-icon tiktok" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col links-col animate-slide" style="--delay: 0.1s">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About Senator</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="index.html#media">Media Hub</a></li>
+          <li><a href="report.html">Report Issue</a></li>
+          <li><a href="admin.html">Admin Dashboard</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col contact-col animate-slide" style="--delay: 0.2s">
+        <h4>Contact Us</h4>
+        <div class="contact-item">
+          <span class="icon">Phone</span>
+          <div>
+            <p>+254 784 326 857</p>
+            <p>+254 769 610 343</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="icon">Email</span>
+          <div>
+            <p>allamanojoseph00@gmail.com</p>
+            <p>bitsmanor@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="icon">Location</span>
+          <p>K’abisai Campaign HQ<br />Westlands, Nairobi</p>
+        </div>
+      </div>
+
+      <!-- Map + Newsletter -->
+      <div class="footer-col map-col animate-slide" style="--delay: 0.3s">
+        <h4>Campaign Office</h4>
+        <div class="mini-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.819667644449!2d36.801808614753!3d-1.267345835092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f172c8f5e6d8d%3A0x7e8f5e6d8d8f5e6d!2sWestlands%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1698765432100"
+            width="100%" height="140" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="newsletter">
+          <h4>Stay Updated</h4>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
+            <input type="email" placeholder="your@email.com" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="privacy-note">We respect your privacy. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="bottom-left">
+        <p>© <span id="year">2025</span> Team K’abisai 2027. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+      <div class="bottom-right">
+        <p>Made with <span class="heart">Heart</span> By Allamano in Nairobi</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
